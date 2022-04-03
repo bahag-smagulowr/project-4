@@ -24,7 +24,7 @@ provider:
   # Use these variables in the functions and resouorces section below. For example, 
   # ${self:provider.environment.ATTACHMENT_S3_BUCKET}
   environment:
-    TODOS_TABLE: Todos-${self:provider.stage}
+    TODOS_TABLE: Todo-${self:provider.stage}
     TODOS_CREATED_AT_INDEX: CreatedAtIndex
     S3_BUCKET: cloud-course-four-bucket-${self:provider.stage}
     SIGNED_URL_EXPIRATION: 300
